@@ -1,2 +1,5 @@
 # my-dev-env
-This script setup my personal ubuntu 16.04 development environment.
+This repo contains my personal development and operation environtment settings.
+
+- For macOS: [here](mac)
+- For Ubuntu Linux: [here](ubuntu)
