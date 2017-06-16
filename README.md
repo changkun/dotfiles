@@ -9,46 +9,29 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles an
 ### System Preference
 
 - **English** as Default language
-
 - **Dark** Theme
-
 - **Dock** Size Small/Disable Magnification/Left Position/Genie effect/Double-click title bar to minimize
-
 - **Finder** enable TabBar+StatusBar+PathBar
-
 - **QuickLook** Preview [https://github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins) 
-
 - **.ssh_config**
-
 - **Global Keyboard Shortcuts**
 
-- - control + space: Spotlight: 
-
+  - control + space: Spotlight: 
   - option + space: Eudict
-
   - shift + space: Dehelper
-
   - command + space: Input Method
-
   - U.S. International PC
-
-  - - option+s: ß
+    - option+s: ß
     - option+u, with a/u/o: ä/ü/ö
-
   - Sogou Input
-
-  - - shift: English/Chinese
-
+    - shift: English/Chinese
 - **Trackpad Gestures**
-
-- - Tap click
+  - Tap click
   - Secondary click
   - Three fingers drag
   - Three fingers tap
-
 - **Additional System Fonts**
-
-- - Powerline Font: [https://github.com/powerline/fonts](https://github.com/powerline/fonts) 
+  - Powerline Font: [https://github.com/powerline/fonts](https://github.com/powerline/fonts) 
 
 ### General
 
@@ -95,7 +78,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles an
 ### Environment
 
 - **Bash**: 
-
 - - **zsh**, oh-my-zsh: [https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
     - general: [zshrc.conf](./zshrc.conf)
@@ -115,7 +97,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles an
     - tmux
     - macvim
     - node
-
 - VIM:
 
   - [.vimrc](./.vimrc)
@@ -126,15 +107,11 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles an
     - Python
     - JavaScript
     - C/C++
-
 - TMUX:
-
-- - [tmux.conf](./tmux.conf)
+  - [tmux.conf](./tmux.conf)
   - [tmux.conf.local](./tmux.conf.local)
-
 - VSCode:
-
-- - C/C++
+  - C/C++
   - Debugger for Chrome
   - Docker
   - Docker Linter
@@ -156,10 +133,8 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles an
   - vscode-pandoc
   - vscode-pdf
   - vue
-
 - Server
-
-- - Apache
+  - Apache
 
 ### Writing
 
@@ -177,7 +152,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles an
 - ShadowsocksX-NG: [https://github.com/shadowsocks/ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 - The Unarchiver: AppStore
 - iStatu Menu: [https://bjango.com/mac/istatmenus/](https://bjango.com/mac/istatmenus/) 
-- Bartender: 
+- Bartender: https://www.macbartender.com
 - KeyCast: [https://github.com/cho45/KeyCast](https://github.com/cho45/KeyCast)
 - OBS: [https://obsproject.com/download](https://obsproject.com/download) 
 
@@ -189,3 +164,11 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles an
 ## Ubuntu Linux
 
 see [ubuntu-setup.sh](./ubuntu-setup.sh).
+
+
+
+
+
+## License
+
+changkun © MIT 
