@@ -1,5 +1,5 @@
-# Docfiles
-This repo contains my personal **macOS** and **Ubuntu Linux** system docfiles and settings.
+# Dotfiles
+This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles and settings.
 
 ## macOS
 
