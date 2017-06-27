@@ -97,6 +97,9 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
     - tmux
     - macvim
     - node
+    - cmake
+    - rmtrash
+    - yarn
 - VIM:
 
   - [.vimrc](./.vimrc)
