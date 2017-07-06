@@ -40,10 +40,19 @@ changkun_hg_prompt_info() {
 	fi
 }
 
+# virtualenv info
+local venv_info='$(virtualenv_info)'
+virtualenv_info() {
+	if [ $VIRTUAL_ENV ]; then
+		echo "%{${fg_bold[white]}%}(env: %{${fg[green]}%}`basename \"$VIRTUAL_ENV\"`%{${fg_bold[white]}%})%{${reset_color}%}"
+	fi
+}
+
 # Prompt format: 
+# (venv: ...)
 # # USER at MACHINE in DIRECTORY
 # →                                 BRANCH STATE [TIME]
-PROMPT="
+PROMPT="${venv_info}
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$fg[cyan]%}%n \
 %{$fg[white]%}at \
@@ -54,7 +63,7 @@ ${hg_info}
 RPROMPT="${git_info} %{$fg[white]%}[%*]"
 
 if [[ "$USER" == "root" ]]; then
-PROMPT="
+PROMPT="${venv_info}
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$bg[yellow]%}%{$fg[cyan]%}%n%{$reset_color%} \
 %{$fg[white]%}at \
