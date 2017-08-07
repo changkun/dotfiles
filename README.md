@@ -11,16 +11,15 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - **English** as Default language
 - **Dark** Theme
 - **Dock** Size Small/Disable Magnification/Left Position/Genie effect/Double-click title bar to minimize
-- **Finder** enable TabBar+StatusBar+PathBar
+- **Finder** enable TabBar+StatusBar+PathBar (View -> Show [TabBar|StatusBar|PathBar])
 - **QuickLook** Preview [https://github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins) 
 - **.ssh_config**
 - **Global Keyboard Shortcuts**
-
-  - control + space: Spotlight: 
+  - control + space: Spotlight
   - option + space: Eudict
   - shift + space: Dehelper
   - command + space: Input Method
-  - U.S. International PC
+  - ABC - Extended
     - option+s: ß
     - option+u, with a/u/o: ä/ü/ö
   - Sogou Input
@@ -99,7 +98,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
     - node
     - cmake
     - rmtrash
-    - yarn
 - VIM:
 
   - [.vimrc](./.vimrc)
@@ -158,6 +156,14 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - Bartender: https://www.macbartender.com
 - KeyCast: [https://github.com/cho45/KeyCast](https://github.com/cho45/KeyCast)
 - OBS: [https://obsproject.com/download](https://obsproject.com/download) 
+
+### Pro Optional
+
+- CUDA: [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
+- cuDNN: [https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
+- JDK: [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- Xcode: AppStore
+
 
 ### Games
 

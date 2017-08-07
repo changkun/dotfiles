@@ -1,12 +1,11 @@
-# WARNING: PLEASE DO NOT USE THIS SCRIPT
-
+# WARNING: PLEASE DO NOT USE THIS SCRIPT, JUST MANUALLY FOLLOW THE STEPS
 
 # basic development environment
 xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # brew install
-brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash yarn
+brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash
 # nodejs install
 npm install -g hexo-cli gulp-cli typescript
 # python install
@@ -20,13 +19,15 @@ cp zsh/zsh.conf ~/.zshrc
 cp zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
 source ~/.zshrc
 
-# install vim
+# install vim config
 cp vim/vimrc.config ~/.vimrc
-cp vim/colors/jellybeans.vim ~/.vim/colors/
+mkdir -p ~/.vim/colors/ && cp vim/colors/jellybeans.vim ~/.vim/colors/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
 
-# install tmux
-cp tmux/tmux.conf ~/.tmux.conf
-cp tmux/tmux.conf.local ~/.tmux.conf.local
+# install tmux config
+git clone https://github.com/gpakosz/.tmux.git ~
+ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
+cp ~/.tmux/.tmux.conf.local ~/.
+cp tmux/tmux.local.conf ~/.tmux.conf.local
