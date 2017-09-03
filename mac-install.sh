@@ -5,7 +5,7 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # brew install
-brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash
+brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash reattach-to-user-namespace
 # nodejs install
 npm install -g hexo-cli gulp-cli typescript
 # python install
