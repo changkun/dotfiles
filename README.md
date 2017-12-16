@@ -49,6 +49,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - **WeChat**: AppStore
 - **WhatsApp**: AppStore
 - **Telegram**: AppStore
+- **Skype**: AppStore
 - **Photoshop** (**Affinity Photo**): AppStore
 - **NeteaseMusic**: AppStore
 - **YoudaoDict** (Optional): AppStore
@@ -70,9 +71,12 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - **SourceTree**: [https://www.sourcetreeapp.com](https://www.sourcetreeapp.com) 
 - **VSCode**: [https://code.visualstudio.com](https://code.visualstudio.com) 
 - **Docker** for Mac: [https://docs.docker.com/docker-for-mac/](https://docs.docker.com/docker-for-mac/) 
-- **Weka 3**: [http://www.cs.waikato.ac.nz/ml/weka/downloading.html](http://www.cs.waikato.ac.nz/ml/weka/downloading.html)
 - **Postman**: [https://www.getpostman.com/apps](https://www.getpostman.com/apps) 
+- **Dash**: [https://kapeli.com/dash](https://kapeli.com/dash)
+- **Robo 3T**: [https://robomongo.org/](https://robomongo.org/)
 - **Xcode** (Optional): AppStore
+- **PyCharm** (Optional): [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)
+- **WebStorm** (Optional): [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
 
 ### Environment
 
@@ -124,9 +128,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
   - Material Theme
   - language-stylus
   - HTML Snippets
-  - Polymer IDE
-  - Polymer Snippets
-  - Polymer Syntax
   - Swig
   - TSLint
   - Sublime Text Key
@@ -141,7 +142,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 
 - Typora: [https://typora.io](https://typora.io) 
 - MacTeX: [http://tug.org/mactex/mactex-download.html](http://mactex.org)
-- Office: [https://stores.office.com/myaccount/home.aspx#install](https://stores.office.com/myaccount/home.aspx#install) 
+- Office: [https://stores.office.com/myaccount/home.aspx#install](https://stores.office.com/myaccount/home.aspx#install)
 - Mendeley: [https://www.mendeley.com/download-mendeley-desktop/](https://www.mendeley.com/download-mendeley-desktop/) 
 - Evernote: AppStore
 - MindNode: AppStore
@@ -152,10 +153,12 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 
 - ShadowsocksX-NG: [https://github.com/shadowsocks/ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 - The Unarchiver: AppStore
+- Wunderlist: AppStore
 - iStatu Menu: [https://bjango.com/mac/istatmenus/](https://bjango.com/mac/istatmenus/) 
-- Bartender: https://www.macbartender.com
+- Bartender: [https://www.macbartender.com](https://www.macbartender.com)
+- Alfred: [https://www.alfredapp.com](https://www.alfredapp.com)
 - KeyCast: [https://github.com/cho45/KeyCast](https://github.com/cho45/KeyCast)
-- OBS: [https://obsproject.com/download](https://obsproject.com/download) 
+
 
 ### Pro Optional
 
@@ -163,7 +166,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - cuDNN: [https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
 - JDK: [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - Xcode: AppStore
-
+- OBS: [https://obsproject.com/download](https://obsproject.com/download) 
 
 ### Games
 
@@ -174,9 +177,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 
 see [ubuntu-setup.sh](./ubuntu-setup.sh).
 
-
-
-
+Not fully supported yet.
 
 ## License
 

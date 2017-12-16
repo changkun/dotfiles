@@ -3,11 +3,14 @@
 	"terminal.external.osxExec": "iTerm.app",
 	"workbench.colorTheme": "Material Theme",
 	"workbench.iconTheme": "eq-material-theme-icons",
+	"workbench.sideBar.location": "left",
 	"vsicons.projectDetection.autoReload": true,
+	"vsicons.dontShowNewVersionMessage": true,
 	"editor.lineNumbers": "on",
 	"editor.fontSize": 12,
 	"editor.rulers": [90, 120],
 	"editor.minimap.enabled": true,
+	"window.zoomLevel": 0,
 	"window.nativeTabs":true,
 	"editor.renderWhitespace":"boundary",
 
@@ -81,6 +84,15 @@
 
 	// pandoc
 	"pandoc.pdfOptString": "--latex-engine=xelatex --listings",
+
+	// eslint
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"html"
+	],
+
+	"terminal.integrated.shell.osx": "/bin/zsh",
 	"terminal.integrated.commandsToSkipShell": [
 		"editor.action.toggleTabFocusMode",
 		"workbench.action.debug.continue",

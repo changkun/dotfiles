@@ -5,11 +5,11 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # brew install
-brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash reattach-to-user-namespace
+brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash reattach-to-user-namespace mongodb elasticsearch
 # nodejs install
 npm install -g hexo-cli gulp-cli typescript
 # python install
-pip3 install virtualenv scipy numpy matplotlib jupyter tensorflow scikit-learn
+pip3 install virtualenv scipy numpy matplotlib jupyter tensorflow keras scikit-learn
 # optional packages
 pip3 install pyyaml pillow requests flask django pandas seaborn
 
