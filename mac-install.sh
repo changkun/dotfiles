@@ -15,7 +15,7 @@ pip3 install pyyaml pillow requests flask django pandas seaborn
 
 # install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-cp zsh/zsh.conf ~/.zshrc
+cp zsh/zshrc.conf ~/.zshrc
 cp zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
 source ~/.zshrc
 
