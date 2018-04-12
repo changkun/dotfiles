@@ -27,7 +27,7 @@ vim +PluginInstall +qall
 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
 
 # install tmux config
-git clone https://github.com/gpakosz/.tmux.git ~
+git clone https://github.com/gpakosz/.tmux.git ~/.tmux
 ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
 cp ~/.tmux/.tmux.conf.local ~/.
 cp tmux/tmux.local.conf ~/.tmux.conf.local
