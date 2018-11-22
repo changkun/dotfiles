@@ -5,7 +5,7 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # brew install
-brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash reattach-to-user-namespace mongodb elasticsearch
+brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash reattach-to-user-namespace mongodb redis
 # nodejs install
 npm install -g hexo-cli gulp-cli typescript
 # python install
@@ -17,6 +17,8 @@ pip3 install pyyaml pillow requests flask django pandas seaborn
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 cp zsh/zshrc.conf ~/.zshrc
 cp zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
+source ~/.zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
 
 # install vim config
