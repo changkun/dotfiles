@@ -5,7 +5,7 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # brew install
-brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash reattach-to-user-namespace mongodb redis
+brew install wget python python3 tree macvim node youtube-dl tmux pandoc pdf2htmlex cmake rmtrash reattach-to-user-namespace mongodb redis golang
 # nodejs install
 npm install -g hexo-cli gulp-cli typescript
 # python install
@@ -33,3 +33,10 @@ git clone https://github.com/gpakosz/.tmux.git ~/.tmux
 ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
 cp ~/.tmux/.tmux.conf.local ~/.
 cp tmux/tmux.local.conf ~/.tmux.conf.local
+
+# fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm fonts
