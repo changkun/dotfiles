@@ -141,7 +141,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 ### Writing
 
 - Typora: [https://typora.io](https://typora.io) 
-- MacTeX: [http://tug.org/mactex/mactex-download.html](http://mactex.org)
+- MacTeX: [http://www.tug.org/mactex/mactex-download.html](http://www.tug.org/mactex/mactex-download.html)
 - Office: [https://stores.office.com/myaccount/home.aspx#install](https://stores.office.com/myaccount/home.aspx#install)
 - Mendeley: [https://www.mendeley.com/download-mendeley-desktop/](https://www.mendeley.com/download-mendeley-desktop/) 
 - Evernote: AppStore
