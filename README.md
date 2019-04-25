@@ -1,4 +1,5 @@
 # Dotfiles
+
 This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles and settings.
 
 ## macOS
@@ -173,11 +174,9 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - Minecraft: https://minecraft.net
 - Steam: http://steampowered.com
 
-## Ubuntu Linux
+## Ubuntu
 
-see [ubuntu-setup.sh](./ubuntu-setup.sh).
-
-Not fully supported yet.
+see [Ubuntu Linux](./ubuntu.md).
 
 ## License
 
