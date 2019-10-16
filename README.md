@@ -13,7 +13,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - **Dark** Theme
 - **Dock** Size Small/Disable Magnification/Left Position/Genie effect/Double-click title bar to minimize
 - **Finder** enable TabBar+StatusBar+PathBar (View -> Show [TabBar|StatusBar|PathBar])
-- **QuickLook** Preview [https://github.com/sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins) 
 - **.ssh_config**
 - **Global Keyboard Shortcuts**
   - control + space: Spotlight
@@ -37,23 +36,19 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 
 - **Dropbox**: [https://www.dropbox.com/install](https://www.dropbox.com/install) 
 - **Chrome**: [https://www.google.com/chrome/index.html](https://www.google.com/chrome/index.html) 
-- **Firefox** (Optional): [https://www.mozilla.org/en-US/firefox/desktop/](https://www.mozilla.org/en-US/firefox/desktop/) 
 - **Eudict**: [http://www.eudic.net/eudic/mac_dictionary.aspx](http://www.eudic.net/eudic/mac_dictionary.aspx) 
 - **Dehelper**: [http://www.francochinois.com/Dehelper/mac.aspx](http://www.francochinois.com/Dehelper/mac.aspx) 
 - **Grammarly**: [https://www.grammarly.com/native/mac](https://www.grammarly.com/native/mac) 
-- **Spotify** (Optional): [https://www.spotify.com/us/download/](https://www.spotify.com/us/download/) 
 - **Slack**: [https://slack.com/downloads/osx](https://slack.com/downloads/osx) 
 - **IINA**: [https://github.com/lhc70000/iina](https://github.com/lhc70000/iina) 
-- **Sogou**: [http://pinyin.sogou.com/mac/?r=pinyin](http://pinyin.sogou.com/mac/?r=pinyin)
+- **Skype**: [https://go.skype.com/skype.download](https://go.skype.com/skype.download)
 - **1Password**: AppStore
 - **QQ**: AppStore
 - **WeChat**: AppStore
 - **WhatsApp**: AppStore
 - **Telegram**: AppStore
-- **Skype**: AppStore
 - **Photoshop** (**Affinity Photo**): AppStore
 - **NeteaseMusic**: AppStore
-- **YoudaoDict** (Optional): AppStore
 
 ### Development
 
@@ -76,8 +71,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - **Dash**: [https://kapeli.com/dash](https://kapeli.com/dash)
 - **Robo 3T**: [https://robomongo.org/](https://robomongo.org/)
 - **Xcode** (Optional): AppStore
-- **PyCharm** (Optional): [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)
-- **WebStorm** (Optional): [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
 
 ### Environment
 
@@ -145,7 +138,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - MacTeX: [http://www.tug.org/mactex/mactex-download.html](http://www.tug.org/mactex/mactex-download.html)
 - Office: [https://stores.office.com/myaccount/home.aspx#install](https://stores.office.com/myaccount/home.aspx#install)
 - Mendeley: [https://www.mendeley.com/download-mendeley-desktop/](https://www.mendeley.com/download-mendeley-desktop/) 
-- Evernote: AppStore
 - MindNode: AppStore
 - OmniGraffle: AppStore
 - PDF Expert: AppStore
@@ -154,7 +146,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 
 - ShadowsocksX-NG: [https://github.com/shadowsocks/ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 - The Unarchiver: AppStore
-- Wunderlist: AppStore
+- Things 3: AppStore
 - iStatu Menu: [https://bjango.com/mac/istatmenus/](https://bjango.com/mac/istatmenus/) 
 - Bartender: [https://www.macbartender.com](https://www.macbartender.com)
 - Alfred: [https://www.alfredapp.com](https://www.alfredapp.com)
