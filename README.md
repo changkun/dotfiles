@@ -22,8 +22,6 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
   - ABC - Extended
     - option+s: ß
     - option+u, with a/u/o: ä/ü/ö
-  - Sogou Input
-    - shift: English/Chinese
 - **Trackpad Gestures**
   - Tap click
   - Secondary click
@@ -160,6 +158,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - JDK: [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - Xcode: AppStore
 - OBS: [https://obsproject.com/download](https://obsproject.com/download) 
+- Blender: [https://www.blender.org/download/](https://www.blender.org/download/)
 
 ### Games
 

@@ -6,7 +6,7 @@ xcode-select --install
 
 # brew install
 brew tap mongodb/brew
-brew install wget python python3 tree macvim node youtube-dl tmux pandoc cmake rmtrash reattach-to-user-namespace mongodb-community redis golang
+brew install wget python python3 tree macvim node youtube-dl tmux pandoc cmake rmtrash reattach-to-user-namespace mongodb-community redis golang httpie
 # nodejs install
 npm install -g hexo-cli typescript
 # python install
