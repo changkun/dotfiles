@@ -29,6 +29,7 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
   - Three fingers tap
 - **Additional System Fonts**
   - Powerline Font: [https://github.com/powerline/fonts](https://github.com/powerline/fonts) 
+- Font rendering: `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO` This is for VSCode
 
 ### General
 
@@ -149,7 +150,12 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - Bartender: [https://www.macbartender.com](https://www.macbartender.com)
 - Alfred: [https://www.alfredapp.com](https://www.alfredapp.com)
 - KeyCast: [https://github.com/cho45/KeyCast](https://github.com/cho45/KeyCast)
-
+- Medis: [https://github.com/luin/medis/releases/tag/v0.5.0](https://github.com/luin/medis/releases/tag/v0.5.0)
+- Sequel Pro: [https://sequelpro.com/download](https://sequelpro.com/download)
+- Adobe Acrobat Reader (for special purpose): 
+- FileZilla: [https://filezilla-project.org/download.php?show_all=1](https://filezilla-project.org/download.php?show_all=1)
+- HandBrake: [https://handbrake.fr/downloads.php](https://handbrake.fr/downloads.php)
+- Zoom.us: [https://zoom.us/](https://zoom.us/)
 
 ### Pro Optional
 
@@ -159,11 +165,13 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - Xcode: AppStore
 - OBS: [https://obsproject.com/download](https://obsproject.com/download) 
 - Blender: [https://www.blender.org/download/](https://www.blender.org/download/)
+- MeshLab: [http://www.meshlab.net/#download](http://www.meshlab.net/#download)
 
-### Games
+### Entertainment
 
 - Minecraft: https://minecraft.net
 - Steam: http://steampowered.com
+- YYets: http://app.rrys.tv/
 
 ## Ubuntu
 
