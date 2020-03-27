@@ -37,3 +37,11 @@ K               # also has the same effect
 :Gdiff          # diff the working tree vs staged version
 :Gcommit %      # commit the current file
 ```
+
+## optional vim plugins
+
+I don't have time for these fancy stuff and they are useless for me.
+
+https://github.com/ryanoasis/nerd-fonts
+https://github.com/ryanoasis/vim-devicons
+https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
