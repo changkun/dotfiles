@@ -36,6 +36,7 @@ cp vim/vimrc.config ~/.vimrc
 mkdir -p ~/.vim/colors/ && cp vim/colors/jellybeans.vim ~/.vim/colors/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+vim -c GoInstallBinaries
 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
 
 # install tmux config
