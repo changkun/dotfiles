@@ -173,6 +173,10 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - Steam: http://steampowered.com
 - YYets: http://app.rrys.tv/
 
+### iPad Pro
+
+WIP
+
 ## Ubuntu
 
 see [Ubuntu Linux](./ubuntu.md).

@@ -6,7 +6,7 @@ cd ~
 ## install basic tools
 apt update
 apt -y upgrade
-apt isntall -y vim zsh git tree clang libboost-dev libssl-dev tmux vim httpie youtube-dl pandoc redis docker.io nodejs npm git hugo
+apt isntall -y vim zsh git tree clang cmake libboost-dev libssl-dev tmux vim httpie youtube-dl pandoc redis docker.io nodejs npm git hugo
 
 # install golang
 mkdir -p /usr/local/goes
@@ -49,4 +49,4 @@ git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
 cd ..
-rm fonts
+rm -rf fonts
