@@ -1,53 +1,52 @@
-# this script setup my personal ubuntu 16.04 dev-environment
+# WARNING: PLEASE DO NOT USE THIS SCRIPT, JUST MANUALLY FOLLOW THE STEPS
 
+# this script setup my personal ubuntu 18.04 dev-env for digital ocean host
 cd ~
 
 ## install basic tools
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get isntall -y vim zsh git tree clang libboost-dev libssl-dev
+apt update
+apt -y upgrade
+apt isntall -y vim zsh git tree clang libboost-dev libssl-dev tmux vim httpie youtube-dl pandoc redis docker.io nodejs npm git hugo
 
-## install `oh-my-zsh`
-sudo sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-## install nodejs
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo apt-get install -y build-essential
-
-## setup taobao npm registry
-sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
+# install golang
+mkdir -p /usr/local/goes
+cd /usr/local/goes
+wget https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz
+tar xvf go1.14.1.linux-amd64.tar.gz && rm go1.14.1.linux-amd64.tar.gz
+mv /usr/local/goes/go /usr/local/goes/go1.14
+ln -s /usr/local/goes/go1.14 /usr/local/goes/go
+ln -s /usr/local/goes/go/bin/go /usr/local/bin/go
 
 ## install python
-sudo apt-get install -y python-pip python3-pip
+apt install -y python3-pip
+pip3 install virtualenv scipy numpy pandas jupyter tensorflow scikit-learn matplotlib seaborn pillow pyyaml requests
 
-## install docker
-sudo apt-get install -y pt-transport-https ca-certificates
-sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-sudo sh -c 'echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" > /etc/apt/sources.list.d/docker.list'
-sudo apt-get update
-sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
-sudo apt-get install -y docker-engine
-sudo goupadd docker
-sudo usermod -aG docker $USER
-sudo service docker start
+## install `oh-my-zsh`
+cd ~
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+cp zsh/zshrc.conf ~/.zshrc
+cat zsh/linux-zshrc.conf >> ~/.zshrc
+cp zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
+source ~/.zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+source ~/.zshrc
 
-## setup aliyun docker registry
-sudo mkdir -p /etc/systemd/system/docker.service.d
-sudo tee /etc/systemd/system/docker.service.d/mirror.conf <<-'EOF'
-[Service] ExecStart=
-ExecStart=/usr/bin/docker daemon -H fd:// --registry-mirror=https://8dtpr9m3.mirror.aliyuncs.com
-EOF
-sudo systemctl daemon-reload
-sudo systemctl restart docker
+# install vim config
+cp vim/vimrc.config ~/.vimrc
+mkdir -p ~/.vim/colors/ && cp vim/colors/jellybeans.vim ~/.vim/colors/
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
 
+# install tmux config
+git clone https://github.com/gpakosz/.tmux.git ~/.tmux
+ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
+cp ~/.tmux/.tmux.conf.local ~/.
+cp tmux/tmux.local.conf ~/.tmux.conf.local
 
-## install swift
-sudo apt-get install -y libicu-dev
-wget https://swift.org/builds/swift-3.0-preview-6/ubuntu1510/swift-3.0-PREVIEW-6/swift-3.0-PREVIEW-6-ubuntu15.10.tar.gz
-tar -zxf swift-3.0-PREVIEW-6-ubuntu15.10.tar.gz && rm swift-3.0-PREVIEW-6-ubuntu15.10.tar.gz
-sudo mv swift-3.0-PREVIEW-6-ubuntu15.10 /usr/local/share/swift
-echo 'export PATH=/usr/local/share/swift/usr/bin:"${PATH}"' >> .zshrc
-source .zshrc
-
-## install nginx
+# fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm fonts
