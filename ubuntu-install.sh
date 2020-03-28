@@ -6,7 +6,7 @@ cd ~
 ## install basic tools
 apt update
 apt -y upgrade
-apt isntall -y build-essential vim zsh git tree clang cmake libboost-dev libssl-dev tmux vim httpie youtube-dl pandoc redis docker.io nodejs npm git hugo
+apt install -y build-essential vim zsh git tree clang cmake libboost-dev libssl-dev tmux vim httpie youtube-dl pandoc redis docker.io nodejs npm git hugo
 
 # install golang
 mkdir -p /usr/local/goes
@@ -22,7 +22,7 @@ apt install -y python3-pip
 pip3 install virtualenv scipy numpy pandas jupyter tensorflow scikit-learn matplotlib seaborn pillow pyyaml requests
 
 ## install `oh-my-zsh`
-cd ~
+cd ~/dotfiles
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 cp zsh/zshrc.conf ~/.zshrc
 cat zsh/linux-zshrc.conf >> ~/.zshrc
