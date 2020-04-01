@@ -14,19 +14,29 @@
 - Visual Studio Code
 - GNOME Tweaks
 - Telegram
-- Electronic Wechat
+- ~~Electronic Wechat~~
 - Blender
 - MeshLab
+- Maya
+- Houdini
+- Termius
+- Mojave-dark-alt
+
 
 ### Others
 
 - iCALDAV Calendar: https://p12-caldav.icloud.com
-- Rescue Time https://www.rescuetime.com/get_rescuetime
 - 1Password X https://support.1password.com/explore/linux/
 - Mendeley https://www.mendeley.com/download-desktop/
 - Sogou https://pinyin.sogou.com/linux/?r=pinyin
 - Typora https://typora.io/#linux
 - Slack
+
+## Key Issues
+
+- How to use Apple iWork, such as Keynote?
+- How to customize keyboard shortcuts that similar to the mac?
+- How to 
 
 and also see [ubuntu-setup.sh](./ubuntu-setup.sh).
 

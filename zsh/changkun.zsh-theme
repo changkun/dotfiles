@@ -59,7 +59,7 @@ PROMPT="${venv_info}
 %{$fg[green]%}$(box_name) $reset_color%}in \
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}
-%{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"
+%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
 RPROMPT="${git_info} %{$fg[white]%}[%*]"
 
 if [[ "$USER" == "root" ]]; then
@@ -70,6 +70,6 @@ PROMPT="${venv_info}
 %{$fg[green]%}$(box_name) $reset_color%}in \
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}
-%{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"
+%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
 RPROMPT="${git_info} %{$fg[white]%}[%*]"
 fi
