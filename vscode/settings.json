@@ -1,22 +1,22 @@
 {
 	// general editor settings
 	"terminal.external.osxExec": "iTerm.app",
-	"workbench.colorTheme": "Material Theme",
-	"workbench.iconTheme": "eq-material-theme-icons",
-	"workbench.sideBar.location": "left",
-	"vsicons.projectDetection.autoReload": true,
-	"vsicons.dontShowNewVersionMessage": true,
 	"editor.lineNumbers": "on",
 	"editor.fontSize": 12,
-	"editor.rulers": [90, 120],
+	"editor.rulers": [72, 120],
+	"editor.wordWrap": "bounded",
+	"editor.wordWrapColumn": 100,
 	"editor.minimap.enabled": true,
-	"window.zoomLevel": 0,
-	"window.nativeTabs":true,
+	"window.nativeTabs": false,
 	"editor.renderWhitespace":"boundary",
 
 	// languages
 	"[python]": {
-		"editor.tabSize": 4
+		"editor.tabSize": 4,
+		"editor.formatOnSave": false
+	},
+	"[vue]": {
+		"editor.tabSize": 2
 	},
 	"[c]": {
 		"editor.tabSize": 4
@@ -36,18 +36,24 @@
 	"[typescriptreact]": {
 		"editor.tabSize": 2
 	},
-	"[vue]": {
-		"editor.tabSize": 2
-	},
 	"[latex]": {
+		"editor.wordWrapColumn": 100,
 		"editor.tabSize": 4
 	},
 	"[shellscript]": {
 	},
 	"[makefile]": {
 	},
+	"[yaml]": {
+		"editor.tabSize": 2,
+	},
+	"[json]": {
+		"editor.wordWrapColumn": 5000,
+	},
 	"[markdown]": {
-		"editor.tabSize": 4
+		"editor.tabSize": 4,
+		"editor.wordWrap": "bounded",
+		"editor.wordWrapColumn": 100,
 	},
 
 	// linting style, provider: pylint, pep8, flake8, mypy, pylama
@@ -55,19 +61,21 @@
 	"python.linting.lintOnSave": true,
 	"python.linting.maxNumberOfProblems": 50,
 	"python.linting.pylintArgs": ["--errors-only"],
-	"python.linting.pep8Enabled": false,
+	"python.linting.pycodestyleEnabled": false,
 	"python.linting.flake8Enabled": false,
 	"python.linting.mypyEnabled": false,
 	"python.linting.pylamaEnabled": false,
 
 	// virtual env
-	"python.venvPath": "venv/bin/python",
+	// "python.venvPath": "venv/bin/python",
 
 	// auto-formatting, provider: autopep8 or yapf, install use pip
-	"python.formatting.formatOnSave": true,
 
 	// auto-complete
-	"python.autoComplete.extraPaths": [],
+	"python.autoComplete.extraPaths": [
+		"/usr/local/lib/python3.6/site-packages",
+		"/usr/local/lib/python3.7/site-packages"
+	],
 
 	// jupyter settings
 	"python.jupyter.defaultKernel": "Python 3",
@@ -84,15 +92,6 @@
 
 	// pandoc
 	"pandoc.pdfOptString": "--latex-engine=xelatex --listings",
-
-	// eslint
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact",
-		"html"
-	],
-
-	"terminal.integrated.shell.osx": "/bin/zsh",
 	"terminal.integrated.commandsToSkipShell": [
 		"editor.action.toggleTabFocusMode",
 		"workbench.action.debug.continue",
@@ -135,5 +134,66 @@
 		"workbench.action.terminal.scrollUp",
 		"workbench.action.terminal.scrollUpPage",
 		"workbench.action.terminal.toggleTerminal"
-	]
+	],
+	"terminal.integrated.scrollback": 100000,
+	"window.zoomLevel": 1,
+	"latex-workshop.chktex.enabled": false,
+	"explorer.confirmDragAndDrop": false,
+	"problems.decorations.enabled": true,
+	"material-icon-theme.folders.theme": "specific",
+	"extensions.ignoreRecommendations": true,
+	"go.buildOnSave": "off",
+	"go.testTimeout": "60m",
+	"go.testFlags": [
+		"-v",
+		"-race"
+	],
+	"breadcrumbs.enabled": true,
+	"files.autoSave": "off",
+	"explorer.confirmDelete": false,
+	"git.autofetch": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"latex-workshop.latex.autoBuild.run": "never",
+	"latex-workshop.latex.autoClean.run": "onBuilt",
+	"C_Cpp.updateChannel": "Insiders",
+	"vsicons.dontShowNewVersionMessage": true,
+	"go.formatTool": "goimports",
+	"editor.fontFamily": "'Source Code Pro for Powerline', Menlo, Monaco, 'Courier New', monospace",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"workbench.iconTheme": "vscode-icons",
+	"go.gopath": "~/go",
+	"go.goroot": "~/goes/go",
+	"files.associations": {
+		"*.go2": "go"
+	},
+	"workbench.editor.scrollToSwitchTabs": true,
+	"latex-workshop.view.pdf.viewer": "tab",
+	"glsl-linter.validatorPath": "/usr/local/bin/glslangValidator",
+	"glsl-linter.fileExtensions": {
+		".fs.glsl": "frag",
+		".vs.glsl": "vert",
+		".tes.glsl": "tese",
+		".tcs.glsl": "tesc",
+		".gs.glsl": "geom"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"window.autoDetectColorScheme": true,
+	"grammarly.userWords": [
+		"Changkun",
+		"GothamGo",
+		"funcdata",
+		"gccgo",
+		"golang",
+		"mcache",
+		"mcentral",
+		"percpu",
+		"pprof",
+		"redir",
+		"redis",
+		"tcmalloc",
+		"url"
+	],
+	"grammarly.autoActivate": false,
 }

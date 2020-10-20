@@ -175,11 +175,11 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 
 ### iPad Pro
 
-WIP
+see [iPad Pro](./devices/ipad.md).
 
 ## Ubuntu
 
-see [Ubuntu Linux](./ubuntu.md).
+see [Ubuntu Linux](./devices/ubuntu.md).
 
 ## License
 
