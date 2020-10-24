@@ -30,6 +30,10 @@
 - Texlive: sudo apt install texlive-full
 - perflock: https://github.com/aclements/perflock
 - benchstat: https://pkg.go.dev/golang.org/x/perf/cmd/benchstat
+- Docker: https://docs.docker.com/engine/install/ubuntu/
+- Docker-compose: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
+- LRZ VPN: https://www.lrz.de/services/netz/mobil/vpnpda/
+- LRZ VPN: https://www.lrz.de/services/netz/mobil/vpnclient/
 
 # Security Settings
 
