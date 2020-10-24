@@ -8,7 +8,7 @@ cd ~
 
 ## install basic tools
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y git build-essential vim zsh ssh tree clang cmake libboost-dev libssl-dev tmux httpie youtube-dl pandoc redis docker.io nodejs npm hugo subversion linux-tools-$(uname -r) linux-tools-generic wine64
+sudo apt install -y git build-essential vim zsh ssh tree clang cmake libboost-dev libssl-dev tmux httpie youtube-dl pandoc redis docker.io nodejs npm hugo subversion linux-tools-$(uname -r) linux-tools-generic wine64 texlive-full
 
 ## install `oh-my-zsh`
 cd ~/dev/dotfiles

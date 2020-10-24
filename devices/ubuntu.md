@@ -27,13 +27,14 @@
 - Remmnia: VNC access to macOS
 - Email: Thunderbird Mail
 - Dropbox: https://www.dropbox.com/install
-- Texlive: sudo apt install texlive-full
+- klatexformula: https://klatexformula.sourceforge.io/downloads
 - perflock: https://github.com/aclements/perflock
 - benchstat: https://pkg.go.dev/golang.org/x/perf/cmd/benchstat
 - Docker: https://docs.docker.com/engine/install/ubuntu/
 - Docker-compose: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
 - LRZ VPN: https://www.lrz.de/services/netz/mobil/vpnpda/
 - LRZ VPN: https://www.lrz.de/services/netz/mobil/vpnclient/
+- Chinese font setting: https://www.synscope.com/1015/ubuntu%E4%BF%AE%E5%A4%8D%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93%E9%97%AE%E9%A2%98/
 
 # Security Settings
 
@@ -109,4 +110,11 @@ Modify the UFW configuration file /etc/ufw/after.rules and add the following rul
 
 COMMIT
 # END UFW AND DOCKER
+```
+
+Go Modules under private domain:
+
+```
+export GOPRIVATE=my.domain.com/x
+git config --global url."git@github.com:".insteadOf "https://github.com/"
 ```
