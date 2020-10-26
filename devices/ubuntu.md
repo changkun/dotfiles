@@ -35,6 +35,7 @@
 - LRZ VPN: https://www.lrz.de/services/netz/mobil/vpnpda/
 - LRZ VPN: https://www.lrz.de/services/netz/mobil/vpnclient/
 - Chinese font setting: https://www.synscope.com/1015/ubuntu%E4%BF%AE%E5%A4%8D%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93%E9%97%AE%E9%A2%98/
+- k3s: https://k3s.io/
 
 # Security Settings
 
