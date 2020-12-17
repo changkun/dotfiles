@@ -38,22 +38,18 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - **Eudict**: [http://www.eudic.net/eudic/mac_dictionary.aspx](http://www.eudic.net/eudic/mac_dictionary.aspx) 
 - **Dehelper**: [http://www.francochinois.com/Dehelper/mac.aspx](http://www.francochinois.com/Dehelper/mac.aspx) 
 - **Grammarly**: [https://www.grammarly.com/native/mac](https://www.grammarly.com/native/mac) 
-- **Slack**: [https://slack.com/downloads/osx](https://slack.com/downloads/osx) 
 - **IINA**: [https://github.com/lhc70000/iina](https://github.com/lhc70000/iina) 
-- **Skype**: [https://go.skype.com/skype.download](https://go.skype.com/skype.download)
 - **1Password**: AppStore
-- **QQ**: AppStore
 - **WeChat**: AppStore
-- **WhatsApp**: AppStore
 - **Telegram**: AppStore
 - **Photoshop** (**Affinity Photo**): AppStore
-- **NeteaseMusic**: AppStore
 
 ### Development
 
 - **iTerm2**: [https://www.iterm2.com](https://www.iterm2.com)
   - Color Presets: [changkun.itermcolors](./changkun.itermcolors)
   - Profile: [com.googlecode.iterm2.plist](com.googlecode.iterm2.plist)
+  - Key-binding: [keys.itermkeymap](./iterm2/keys.itermkeymap)
     - **send text at start** tmux attach -d -t dev || tmux new -s dev
     - **Cusor** Underline
     - **Font** 16pt Ubuntu Mono derivative Powerline
@@ -63,79 +59,71 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
     - **Window appearence** Transparency to 15%
     - **Window appearence** Blur to 40%
     - **Terminal Emulation** Unicode (UTF-8), xterm-256color
-- **SourceTree**: [https://www.sourcetreeapp.com](https://www.sourcetreeapp.com) 
-- **VSCode**: [https://code.visualstudio.com](https://code.visualstudio.com) 
-- **Docker** for Mac: [https://docs.docker.com/docker-for-mac/](https://docs.docker.com/docker-for-mac/) 
-- **Postman**: [https://www.getpostman.com/apps](https://www.getpostman.com/apps) 
-- **Dash**: [https://kapeli.com/dash](https://kapeli.com/dash)
-- **Robo 3T**: [https://robomongo.org/](https://robomongo.org/)
-- **Xcode** (Optional): AppStore
+- VSCode: [https://code.visualstudio.com](https://code.visualstudio.com) 
+- Xcode: AppStore
+- Docker for Mac: [https://docs.docker.com/docker-for-mac/](https://docs.docker.com/docker-for-mac/) 
 
 ### Environment
 
 - **Bash**: 
 - - **zsh**, oh-my-zsh: [https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-    - general: [zshrc.conf](./zshrc.conf)
-    - zsh **theme**
-      - [changkun.zsh-theme](./changkun.zsh-theme)
-
   - **brew**: [https://brew.sh](https://brew.sh) 
-
-  - - brew tap homebrew/science
-    - python
-    - python3
-    - youtube-dl
-    - pandoc
-    - pdf2htmlex
-    - tree
-    - wget
-    - tmux
-    - macvim
-    - node
-    - cmake
-    - rmtrash
 - VIM:
-
   - [.vimrc](./.vimrc)
-    - vundle.vim: [https://github.com/VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim) 
-    - YouCompleteMe: https://github.com/Valloric/YouCompleteMe
-    - lightline.vim: https://github.com/itchyny/lightline.vim
-  - Settings
-    - Python
-    - JavaScript
-    - C/C++
 - TMUX:
   - [tmux.conf](./tmux.conf)
   - [tmux.conf.local](./tmux.conf.local)
-- VSCode:
-  - C/C++
-  - Debugger for Chrome
-  - Docker
-  - Docker Linter
-  - Docker Runner
-  - ESLint
-  - Jupyter
-  - LaTeX Language Support
-  - Python
-  - Material Theme
-  - language-stylus
-  - HTML Snippets
-  - Swig
-  - TSLint
-  - Sublime Text Key
-  - vscode-icons
-  - vscode-pandoc
-  - vscode-pdf
-  - vue
-- Server
-  - Apache
+- VSCode: code --list-extensions | xargs -L 1 echo code --install-extension
+  ```
+  code --install-extension bungcip.better-toml
+  code --install-extension circledev.glsl-canvas
+  code --install-extension dbaeumer.vscode-eslint
+  code --install-extension donjayamanne.jupyter
+  code --install-extension eamodio.gitlens
+  code --install-extension Equinusocio.vsc-community-material-theme
+  code --install-extension Equinusocio.vsc-material-theme
+  code --install-extension equinusocio.vsc-material-theme-icons
+  code --install-extension eriklynd.json-tools
+  code --install-extension felipe-mendes.slack-theme
+  code --install-extension felixfbecker.php-intellisense
+  code --install-extension formulahendry.vscode-mysql
+  code --install-extension golang.go
+  code --install-extension James-Yu.latex-workshop
+  code --install-extension janisdd.vscode-edit-csv
+  code --install-extension johnstoncode.svn-scm
+  code --install-extension maelvalais.autoconf
+  code --install-extension mechatroner.rainbow-csv
+  code --install-extension mrjjot.vscode-glsl-linter
+  code --install-extension ms-azuretools.vscode-docker
+  code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+  code --install-extension ms-python.python
+  code --install-extension ms-toolsai.jupyter
+  code --install-extension ms-vscode-remote.remote-ssh
+  code --install-extension ms-vscode-remote.remote-ssh-edit
+  code --install-extension ms-vscode.cpptools
+  code --install-extension njpwerner.autodocstring
+  code --install-extension octref.vetur
+  code --install-extension PKief.material-icon-theme
+  code --install-extension PsykoSoldi3r.itunes-vscode
+  code --install-extension quillaja.goasm
+  code --install-extension redhat.vscode-yaml
+  code --install-extension rust-lang.rust
+  code --install-extension slevesque.shader
+  code --install-extension tomoki1207.pdf
+  code --install-extension vscode-icons-team.vscode-icons
+  code --install-extension vscodevim.vim
+  code --install-extension WakaTime.vscode-wakatime
+  code --install-extension wayou.vscode-todo-highlight
+  code --install-extension yzhang.markdown-all-in-one
+  code --install-extension zhouronghui.propertylist
+  code --install-extension znck.grammarly
+  code --install-extension zxh404.vscode-proto3
+  ```
 
 ### Writing
 
 - Typora: [https://typora.io](https://typora.io) 
 - MacTeX: [http://www.tug.org/mactex/mactex-download.html](http://www.tug.org/mactex/mactex-download.html)
-- Office: [https://stores.office.com/myaccount/home.aspx#install](https://stores.office.com/myaccount/home.aspx#install)
 - Mendeley: [https://www.mendeley.com/download-mendeley-desktop/](https://www.mendeley.com/download-mendeley-desktop/) 
 - MindNode: AppStore
 - OmniGraffle: AppStore
@@ -149,24 +137,26 @@ This repo contains my personal **macOS** and **Ubuntu Linux** system dotfiles an
 - iStatu Menu: [https://bjango.com/mac/istatmenus/](https://bjango.com/mac/istatmenus/) 
 - Bartender: [https://www.macbartender.com](https://www.macbartender.com)
 - Alfred: [https://www.alfredapp.com](https://www.alfredapp.com)
-- KeyCast: [https://github.com/cho45/KeyCast](https://github.com/cho45/KeyCast)
-- Medis: [https://github.com/luin/medis/releases/tag/v0.5.0](https://github.com/luin/medis/releases/tag/v0.5.0)
-- Sequel Pro: [https://sequelpro.com/download](https://sequelpro.com/download)
-- Adobe Acrobat Reader (for special purpose): 
-- FileZilla: [https://filezilla-project.org/download.php?show_all=1](https://filezilla-project.org/download.php?show_all=1)
-- HandBrake: [https://handbrake.fr/downloads.php](https://handbrake.fr/downloads.php)
-- Zoom.us: [https://zoom.us/](https://zoom.us/)
+- Zoom: [https://zoom.us/](https://zoom.us/)
 
-### Pro Optional
+### Optional
 
+- Blender: [https://www.blender.org/download/](https://www.blender.org/download/)
+- MeshLab: [http://www.meshlab.net/#download](http://www.meshlab.net/#download)
 - CUDA: [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
 - cuDNN: [https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
 - JDK: [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - Xcode: AppStore
 - OBS: [https://obsproject.com/download](https://obsproject.com/download) 
-- Blender: [https://www.blender.org/download/](https://www.blender.org/download/)
-- MeshLab: [http://www.meshlab.net/#download](http://www.meshlab.net/#download)
-
+- Medis: [https://github.com/luin/medis/releases/tag/v0.5.0](https://github.com/luin/medis/releases/tag/v0.5.0)
+- Sequel Pro: [https://sequelpro.com/download](https://sequelpro.com/download)
+- HandBrake: [https://handbrake.fr/downloads.php](https://handbrake.fr/downloads.php)
+- Adobe Acrobat Reader (for special purpose)
+- Office: [https://stores.office.com/myaccount/home.aspx#install](https://stores.office.com/myaccount/home.aspx#install)
+- Postman: [https://www.getpostman.com/apps](https://www.getpostman.com/apps) 
+- Dash: [https://kapeli.com/dash](https://kapeli.com/dash)
+- Robo 3T: [https://robomongo.org/](https://robomongo.org/)
+- SourceTree: [https://www.sourcetreeapp.com](https://www.sourcetreeapp.com) 
 ### Entertainment
 
 - Minecraft: https://minecraft.net
