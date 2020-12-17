@@ -1,5 +1,5 @@
 
-# Ubuntu Linux
+# Linux (Ubuntu Distribution)
 
 ## System Preference
 
