@@ -6,7 +6,7 @@ xcode-select --install
 
 # brew install
 brew tap mongodb/brew
-brew install wget python3 tree macvim node youtube-dl tmux pandoc cmake reattach-to-user-namespace mongodb-community redis httpie vegeta kubectl
+brew install wget python3 tree macvim node youtube-dl tmux pandoc cmake reattach-to-user-namespace mongodb-community redis httpie vegeta kubectl doctl
 # nodejs install
 npm install -g typescript
 # python install
@@ -43,8 +43,6 @@ ln tmux/tmux.conf ~/.tmux.conf
 ln tmux/tmux.local.conf ~/.tmux.conf.local
 
 # fonts
-git clone https://github.com/changkun/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts && ./install.sh && cd .. && rm -rf fonts
+

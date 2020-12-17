@@ -8,7 +8,7 @@ cd ~
 
 ## install basic tools
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y git build-essential vim zsh ssh tree clang cmake libboost-dev libssl-dev tmux httpie vegeta youtube-dl pandoc redis docker.io nodejs npm hugo subversion linux-tools-$(uname -r) linux-tools-generic wine64 texlive-full graphviz xbindkeys xbindkeys-config xclip kubectl
+sudo apt install -y git build-essential vim zsh ssh tree clang cmake libboost-dev libssl-dev tmux httpie vegeta youtube-dl pandoc redis docker.io nodejs npm hugo subversion linux-tools-$(uname -r) linux-tools-generic wine64 texlive-full graphviz xbindkeys xbindkeys-config xclip kubectl doctl
 
 ## install `oh-my-zsh`
 cd ~/dev/dotfiles
@@ -45,7 +45,4 @@ ln tmux/tmux.local.conf ~/.tmux.conf.local
 
 # fonts
 git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
+cd fonts && ./install.sh && cd .. && rm -rf fonts
