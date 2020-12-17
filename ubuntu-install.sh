@@ -35,9 +35,9 @@ ln -s ~/goes/go1.15 ~/goes/go
 ln vim/vimrc.config ~/.vimrc
 mkdir -p ~/.vim/colors/
 ln vim/colors/jellybeans.vim ~/.vim/colors/jellybeans.vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-~/.vim/bundle/YouCompleteMe/install.py --go-completer
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
+~/.vim/plugged/YouCompleteMe/install.py --go-completer
 
 # install tmux config
 ln tmux/tmux.conf ~/.tmux.conf
