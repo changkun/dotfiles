@@ -31,11 +31,12 @@ source ~/.zshrc
 go install changkun.de/x/cmd/{rmtrash,tli}
 
 # install vim config
-cp vim/vimrc.config ~/.vimrc
-mkdir -p ~/.vim/colors/ && cp vim/colors/jellybeans.vim ~/.vim/colors/
+ln vim/vimrc.config ~/.vimrc
+mkdir -p ~/.vim/colors/
+ln vim/colors/jellybeans.vim ~/.vim/colors/jellybeans.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
+~/.vim/bundle/YouCompleteMe/install.py --go-completer
 
 # install tmux config
 git clone https://github.com/gpakosz/.tmux.git ~/.tmux
