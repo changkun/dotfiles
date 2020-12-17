@@ -6,22 +6,29 @@ xcode-select --install
 
 # brew install
 brew tap mongodb/brew
-brew install wget python python3 tree macvim node youtube-dl tmux pandoc cmake rmtrash reattach-to-user-namespace mongodb-community redis golang httpie
+brew install wget python3 tree macvim node youtube-dl tmux pandoc cmake reattach-to-user-namespace mongodb-community redis httpie vegeta kubectl
 # nodejs install
-npm install -g hexo-cli typescript
+npm install -g typescript
 # python install
 pip3 install virtualenv scipy numpy pandas jupyter tensorflow scikit-learn matplotlib seaborn pillow
-# optional packages
-pip3 install pyyaml requests
 
 # install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-cp zsh/zshrc.conf ~/.zshrc
-cat zsh/mac-zshrc.conf >> ~/.zshrc
-cp zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
-source ~/.zshrc
+mv ~/.zshrc ~/.zshrc_old
+ln zsh/zshrc-mac.conf ~/.zshrc
+ln zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
+
+# install golang
+mkdir -p ~/goes
+cd ~/goes
+wget https://dl.google.com/go/go1.15.6.linux-amd64.tar.gz
+tar xvf go1.15.6.linux-amd64.tar.gz && rm go1.15.6.linux-amd64.tar.gz
+mv ~/goes/go ~/goes/go1.15
+ln -s ~/goes/go1.15 ~/goes/go
+source ~/.zshrc
+go install changkun.de/x/cmd/{rmtrash,tli}
 
 # install vim config
 cp vim/vimrc.config ~/.vimrc
@@ -37,7 +44,7 @@ cp ~/.tmux/.tmux.conf.local ~/.
 cp tmux/tmux.local.conf ~/.tmux.conf.local
 
 # fonts
-git clone https://github.com/powerline/fonts.git --depth=1
+git clone https://github.com/changkun/fonts.git --depth=1
 cd fonts
 ./install.sh
 cd ..
