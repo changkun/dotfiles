@@ -39,10 +39,8 @@ vim +PluginInstall +qall
 ~/.vim/bundle/YouCompleteMe/install.py --go-completer
 
 # install tmux config
-git clone https://github.com/gpakosz/.tmux.git ~/.tmux
-ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
-cp ~/.tmux/.tmux.conf.local ~/.
-cp tmux/tmux.local.conf ~/.tmux.conf.local
+ln tmux/tmux.conf ~/.tmux.conf
+ln tmux/tmux.local.conf ~/.tmux.conf.local
 
 # fonts
 git clone https://github.com/changkun/fonts.git --depth=1
