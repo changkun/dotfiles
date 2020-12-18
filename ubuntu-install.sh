@@ -14,7 +14,7 @@ sudo apt install -y git build-essential vim zsh ssh tree clang cmake libboost-de
 cd ~/dev/dotfiles
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mv ~/.zshrc ~/.zshrc_old
-ln zsh/zshrc-mac.conf ~/.zshrc
+ln zsh/zshrc-linux.conf ~/.zshrc
 ln zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
