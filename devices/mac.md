@@ -121,11 +121,22 @@
 - Typora: https://typora.io 
 - MacTeX: http://www.tug.org/mactex/mactex-download.html
 - Klatexformula: https://klatexformula.sourceforge.io/downloads
-- Mendeley: https://www.mendeley.com/download-mendeley-desktop/ 
 - MindNode: AppStore
 - OmniGraffle: AppStore
 - PDF Expert: AppStore
-
+- Mendeley: https://www.mendeley.com/download-mendeley-desktop/ 
+- Zotero: https://www.zotero.org/download/
+  + Plugin Zotfile: http://zotfile.com/
+  + Config: base directory to dropbox, zotfile source folder from download, and location of files to dropbox (automatic move).
+  + Use subfolders: `/%c` on macOS/Linux, `\\%c` on windows
+  + Rename rules: `{%y-}{%a-}{%t}`
+  + Delimiter between multiple lines `-`
+  + Change to lower case
+  + Replace blanks
+  + Truncate title after `.` or `:` or `?`
+  + Maximum length of title 80
+  + Maximum number of authors 2
+  + Add suffix when authors are omitted `etal`
 ### Utils
 
 - ShadowsocksX-NG: https://github.com/shadowsocks/ShadowsocksX-NG
