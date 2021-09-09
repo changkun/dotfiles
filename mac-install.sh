@@ -23,12 +23,12 @@ source ~/.zshrc
 # install golang
 mkdir -p ~/goes
 cd ~/goes
-wget https://dl.google.com/go/go1.15.6.linux-amd64.tar.gz
-tar xvf go1.15.6.linux-amd64.tar.gz && rm go1.15.6.linux-amd64.tar.gz
-mv ~/goes/go ~/goes/go1.15
-ln -s ~/goes/go1.15 ~/goes/go
+wget https://dl.google.com/go/go1.17.darwin-amd64.tar.gz
+tar xvf go1.17.darwin-amd64.tar.gz && rm go1.17.darwin-amd64.tar.gz
+mv ~/goes/go ~/goes/go1.17
+ln -s ~/goes/go1.17 ~/goes/go
 source ~/.zshrc
-go install changkun.de/x/cmd/{rmtrash,tli}
+go install changkun.de/x/{rmtrash,tli}@latest
 
 # install vim config
 ln vim/vimrc.config ~/.vimrc
