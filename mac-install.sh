@@ -12,6 +12,10 @@ npm install -g typescript
 # python install
 pip3 install virtualenv scipy numpy pandas jupyter tensorflow scikit-learn matplotlib seaborn pillow
 
+# install autojump
+git clone git://github.com/wting/autojump.git
+cd autojump && ./install.py && cd .. && rm -rf autojump
+
 # install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mv ~/.zshrc ~/.zshrc_old
