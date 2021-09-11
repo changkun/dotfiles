@@ -1,5 +1,5 @@
 # CHANGKUN ZSH THEME
-# hi@changkun.us
+# hi@changkun.de
 # Based on the great ys theme (http://ysmood.org/wp/2013/03/my-ys-terminal-theme/)
 
 # Machine name.
