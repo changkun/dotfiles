@@ -19,7 +19,7 @@ sudo apt install -y tree youtube-dl
 cd ~/dev/dotfiles
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mv ~/.zshrc ~/.zshrc_old
-ln zsh/zshrc-linux.conf ~/.zshrc
+ln -s zsh/zshrc-linux.conf ~/.zshrc
 ln zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
@@ -29,11 +29,13 @@ apt install -y python3-pip
 pip3 install virtualenv scipy numpy pandas jupyter tensorflow scikit-learn matplotlib seaborn pillow pyyaml requests
 
 # install golang
-mkdir -p ~/goes && cd ~/goes
-wget https://dl.google.com/go/go1.15.6.linux-amd64.tar.gz
-tar xvf go1.15.6.linux-amd64.tar.gz && rm go1.15.6.linux-amd64.tar.gz
-mv ~/goes/go ~/goes/go1.15
-ln -s ~/goes/go1.15 ~/goes/go
+GOVERSION=$(curl -s 'https://golang.org/dl/?mode=json' | grep '"version"' | sed 1q | awk '{print $2}' | tr -d ',"')  # get latest go version
+GOARCH=$(if [[ $(uname -m) == "x86_64" ]] ; then echo amd64; else echo $(uname -m); fi) # get either amd64 or arm64 (darwin/m1)
+wget https://dl.google.com/go/$GOVERSION.linux-$GOARCH.tar.gz
+tar xvf $GOVERSION.linux-$GOARCH.tar.gz && rm $GOVERSION.linux-$GOARCH.tar.gz
+mv ~/goes/go ~/goes/$GOVERSION
+ln -s ~/goes/$GOVERSION ~/goes/go
+source ~/.zshrc
 
 # install vim config
 cd ~/dev/dotfiles
