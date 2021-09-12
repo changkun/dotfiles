@@ -137,6 +137,7 @@
   + Maximum length of title 80
   + Maximum number of authors 2
   + Add suffix when authors are omitted `etal`
+
 ### Utils
 
 - ShadowsocksX-NG: https://github.com/shadowsocks/ShadowsocksX-NG

@@ -30,4 +30,4 @@ Managing multiple go versions:
 
 ## License
 
-MIT | Copyright &copy; 2016-2020 [Changkun Ou](https://changkun.de)
+MIT | Copyright &copy; 2016-2021 [Changkun Ou](https://changkun.de)
