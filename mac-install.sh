@@ -27,12 +27,14 @@ source ~/.zshrc
 # install golang
 mkdir -p ~/goes
 cd ~/goes
-wget https://dl.google.com/go/go1.17.darwin-amd64.tar.gz
-tar xvf go1.17.darwin-amd64.tar.gz && rm go1.17.darwin-amd64.tar.gz
-mv ~/goes/go ~/goes/go1.17
-ln -s ~/goes/go1.17 ~/goes/go
+GOVERSION=$(curl -s 'https://golang.org/dl/?mode=json' | grep '"version"' | sed 1q | awk '{print $2}' | tr -d ',"')  # get latest go version
+GOARCH=$(if [[ $(uname -m) == "x86_64" ]] ; then echo amd64; else echo $(uname -m); fi) # get either amd64 or arm64 (darwin/m1)
+wget https://dl.google.com/go/$GOVERSION.darwin-$GOARCH.tar.gz
+tar xvf $GOVERSION.darwin-$GOARCH.tar.gz && rm $GOVERSION.darwin-$GOARCH.tar.gz
+mv ~/goes/go ~/goes/$GOVERSION
+ln -s ~/goes/$GOVERSION ~/goes/go
 source ~/.zshrc
-go install changkun.de/x/{rmtrash,tli}@latest
+go install changkun.de/x/{rmtrash,tli,ser}@latest
 
 # install vim config
 ln vim/vimrc.config ~/.vimrc
