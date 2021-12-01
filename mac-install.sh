@@ -6,7 +6,7 @@ xcode-select --install
 
 # brew install
 brew tap mongodb/brew
-brew install wget python3 tree macvim node youtube-dl tmux pandoc cmake reattach-to-user-namespace mongodb-community redis httpie vegeta kubectl doctl
+brew install wget python3 tree macvim node youtube-dl tmux pandoc cmake cmake-docs reattach-to-user-namespace mongodb-community redis httpie vegeta
 # nodejs install
 npm install -g typescript
 # python install
@@ -27,7 +27,7 @@ source ~/.zshrc
 # install golang
 mkdir -p ~/goes
 cd ~/goes
-GOVERSION=$(curl -s 'https://golang.org/dl/?mode=json' | grep '"version"' | sed 1q | awk '{print $2}' | tr -d ',"')  # get latest go version
+GOVERSION=$(curl -s 'https://go.dev/dl/?mode=json' | grep '"version"' | sed 1q | awk '{print $2}' | tr -d ',"')  # get latest go version
 GOARCH=$(if [[ $(uname -m) == "x86_64" ]] ; then echo amd64; else echo $(uname -m); fi) # get either amd64 or arm64 (darwin/m1)
 wget https://dl.google.com/go/$GOVERSION.darwin-$GOARCH.tar.gz
 tar xvf $GOVERSION.darwin-$GOARCH.tar.gz && rm $GOVERSION.darwin-$GOARCH.tar.gz
