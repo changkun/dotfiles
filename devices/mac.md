@@ -25,7 +25,6 @@
   - Three fingers tap
 - **Additional System Fonts**
   - Powerline Font: https://github.com/changkun/fonts
-- Font rendering: `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO` This is for VSCode
 
 ### General
 
