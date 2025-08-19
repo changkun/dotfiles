@@ -1,0 +1,18 @@
+[user]
+        name = Changkun Ou
+        email = hi@changkun.de
+[push]
+        default = current
+[color]
+        ui = true
+[branch]
+        autosetupmerge = always
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+[http]
+        cookiefile = /Users/changkun/.gitcookies
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
