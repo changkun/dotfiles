@@ -2,7 +2,7 @@
 
 # basic development environment
 xcode-select --install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # brew install
 brew tap mongodb/brew
@@ -13,7 +13,7 @@ npm install -g typescript
 pip3 install virtualenv scipy numpy pandas jupyter tensorflow scikit-learn matplotlib seaborn pillow
 
 # install autojump
-git clone git://github.com/wting/autojump.git
+git clone https://github.com/wting/autojump
 cd autojump && ./install.py && cd .. && rm -rf autojump
 
 # install oh-my-zsh
@@ -34,7 +34,7 @@ tar xvf $GOVERSION.darwin-$GOARCH.tar.gz && rm $GOVERSION.darwin-$GOARCH.tar.gz
 mv ~/goes/go ~/goes/$GOVERSION
 ln -s ~/goes/$GOVERSION ~/goes/go
 source ~/.zshrc
-go install changkun.de/x/{rmtrash,tli,ser}@latest
+go install changkun.de/x/rmtrash@latest
 
 # install vim config
 ln vim/vimrc.config ~/.vimrc
