@@ -286,10 +286,6 @@ To improve this skill:
 3. Test with Claude Code
 4. Submit a pull request
 
-## 📄 License
-
-[Add your license here]
-
 ## 🔗 Links
 
 - [Claude Code Documentation](https://docs.anthropic.com/claude-code)
