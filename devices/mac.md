@@ -60,9 +60,9 @@
 
 ### Environment
 
-- **Bash**: 
+- **Bash**:
 - oh-my-zsh: https://github.com/robbyrussell/oh-my-zsh
-  - brew: https://brew.sh 
+  - brew: https://brew.sh
 - VIM:
   - [.vimrc](../.vimrc)
 - TMUX:
@@ -117,13 +117,13 @@
 
 ### Writing
 
-- Typora: https://typora.io 
+- Typora: https://typora.io
 - MacTeX: http://www.tug.org/mactex/mactex-download.html
 - Klatexformula: https://klatexformula.sourceforge.io/downloads
 - MindNode: AppStore
 - OmniGraffle: AppStore
 - PDF Expert: AppStore
-- Mendeley: https://www.mendeley.com/download-mendeley-desktop/ 
+- Mendeley: https://www.mendeley.com/download-mendeley-desktop/
 - Zotero: https://www.zotero.org/download/
   + Plugin Zotfile: http://zotfile.com/
   + Config: base directory to dropbox, zotfile source folder from download, and location of files to dropbox (automatic move).
