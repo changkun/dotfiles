@@ -1,11 +1,17 @@
 #!/bin/bash
-# Count lines of code per .go file, with optional folder exclusions.
-# Usage: ./loc.sh [exclude_dir ...]
-# Example: ./loc.sh proto vendor notebooks
+# Count lines of code per .go file, with optional folder exclusions and minimum line filter.
+# Usage: ./loc.sh [-min N] [exclude_dir ...]
+# Example: ./loc.sh -min 500 proto vendor notebooks
+
+MIN=0
+if [[ "$1" == "-min" ]]; then
+    MIN="$2"
+    shift 2
+fi
 
 FIND_ARGS=(. -name '*.go')
 for dir in "$@"; do
     FIND_ARGS+=(-not -path "*/${dir}/*")
 done
 
-find "${FIND_ARGS[@]}" | xargs wc -l | sort -n
+find "${FIND_ARGS[@]}" | xargs wc -l | sort -n | awk -v min="$MIN" '$1 >= min'
