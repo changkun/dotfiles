@@ -1,16 +1,37 @@
 #!/bin/bash
-# Count lines of code per .go file, with optional folder exclusions and minimum line filter.
-# Usage: ./loc.sh [-min N] [exclude_dir ...]
-# Example: ./loc.sh -min 500 proto vendor notebooks
+# Count lines of code per .go file.
+# Usage: loc [-min N] [-exclude dir,dir,...] [target_dir]
+# Examples:
+#   loc                                  # count all .go files in current dir
+#   loc ./internal                       # count all .go files under ./internal
+#   loc -min 500 ./internal              # only files with 500+ lines
+#   loc -exclude proto,vendor .          # exclude proto/ and vendor/
+#   loc -min 100 -exclude proto .        # combine flags
+#   loc -min 200 -exclude mock,proto ./internal
 
 MIN=0
-if [[ "$1" == "-min" ]]; then
-    MIN="$2"
-    shift 2
-fi
+EXCLUDES=()
+TARGET="."
 
-FIND_ARGS=(. -name '*.go')
-for dir in "$@"; do
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -min)
+            MIN="$2"
+            shift 2
+            ;;
+        -exclude)
+            IFS=',' read -ra EXCLUDES <<< "$2"
+            shift 2
+            ;;
+        *)
+            TARGET="$1"
+            shift
+            ;;
+    esac
+done
+
+FIND_ARGS=("$TARGET" -name '*.go')
+for dir in "${EXCLUDES[@]}"; do
     FIND_ARGS+=(-not -path "*/${dir}/*")
 done
 
