@@ -30,9 +30,11 @@
 - Chrome: https://www.google.com/chrome/index.html
 - **Grammarly**: https://www.grammarly.com/native/mac
 - **IINA**: https://github.com/lhc70000/iina
-- **1Password**: AppStore
+- 1Password: https://1password.com/downloads/mac
 - **WeChat**: AppStore
 - **Telegram**: AppStore
+- WhatsApp: AppStore
+- Slack: https://slack.com/downloads/mac
 - **Photoshop** (**Affinity Photo**): AppStore
 
 ### Development
@@ -61,6 +63,14 @@
 - Xcode: AppStore
 - Docker for Mac: https://docs.docker.com/docker-for-mac/
 - Podman: https://podman.io/
+
+### AI
+
+- Claude: https://claude.com/download
+- Claude Code: `curl -fsSL https://claude.ai/install.sh | bash`
+  - installs into `~/.local/bin`, which [zshrc-mac.conf](../zsh/zshrc-mac.conf) already puts on `$PATH`
+- ChatGPT: https://openai.com/chatgpt/desktop/
+- Ollama: https://ollama.com/download
 
 ### Environment
 
@@ -93,8 +103,10 @@
 
 ### Utils
 
-- ShadowsocksX-NG: https://github.com/shadowsocks/ShadowsocksX-NG
+- Shadowrocket: AppStore
 - Things 3: AppStore
+- Magnet: AppStore
+- Tailscale: https://tailscale.com/download/mac
 - Zoom: https://zoom.us/
 
 ### Optional
