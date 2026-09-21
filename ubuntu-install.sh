@@ -20,6 +20,7 @@ cd ~/dev/dotfiles
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mv ~/.zshrc ~/.zshrc_old
 ln -s zsh/zshrc-linux.conf ~/.zshrc
+touch ~/.zshrc.local && chmod 600 ~/.zshrc.local  # machine-local secrets, never committed
 ln zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc

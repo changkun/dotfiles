@@ -19,6 +19,7 @@ cd autojump && ./install.py && cd .. && rm -rf autojump
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mv ~/.zshrc ~/.zshrc_old
 ln zsh/zshrc-mac.conf ~/.zshrc
+touch ~/.zshrc.local && chmod 600 ~/.zshrc.local  # machine-local secrets, never committed
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
 
