@@ -12,8 +12,6 @@
 - **.ssh_config**
 - **Global Keyboard Shortcuts**
   - control + space: Spotlight
-  - option + space: Eudict
-  - shift + space: Dehelper
   - command + space: Input Method
   - ABC - Extended
     - option+s: ß
@@ -30,8 +28,6 @@
 
 - Dropbox: https://www.dropbox.com/install
 - Chrome: https://www.google.com/chrome/index.html
-- **Eudict**: http://www.eudic.net/eudic/mac_dictionary.aspx
-- **Dehelper**: http://www.francochinois.com/Dehelper/mac.aspx
 - **Grammarly**: https://www.grammarly.com/native/mac
 - **IINA**: https://github.com/lhc70000/iina
 - **1Password**: AppStore
@@ -40,6 +36,13 @@
 - **Photoshop** (**Affinity Photo**): AppStore
 
 ### Development
+
+- **Ghostty**: https://ghostty.org/
+    ```
+    macos-option-as-alt = true
+    keybind = ctrl+a>\=new_split:right
+    keybind = ctrl+a>-=new_split:down
+    ```
 
 - **iTerm2**: https://www.iterm2.com
   - Color Presets: [changkun.itermcolors](../iterm2/changkun.itermcolors)
@@ -57,6 +60,7 @@
 - VSCode: https://code.visualstudio.com
 - Xcode: AppStore
 - Docker for Mac: https://docs.docker.com/docker-for-mac/
+- Podman: https://podman.io/
 
 ### Environment
 
@@ -68,62 +72,12 @@
 - TMUX:
   - [tmux.conf](../tmux.conf)
   - [tmux.conf.local](../tmux.conf.local)
-- VSCode: code --list-extensions | xargs -L 1 echo code --install-extension
-  ```
-  code --install-extension bungcip.better-toml
-  code --install-extension circledev.glsl-canvas
-  code --install-extension dbaeumer.vscode-eslint
-  code --install-extension donjayamanne.jupyter
-  code --install-extension eamodio.gitlens
-  code --install-extension Equinusocio.vsc-community-material-theme
-  code --install-extension Equinusocio.vsc-material-theme
-  code --install-extension equinusocio.vsc-material-theme-icons
-  code --install-extension eriklynd.json-tools
-  code --install-extension felipe-mendes.slack-theme
-  code --install-extension felixfbecker.php-intellisense
-  code --install-extension formulahendry.vscode-mysql
-  code --install-extension golang.go
-  code --install-extension James-Yu.latex-workshop
-  code --install-extension janisdd.vscode-edit-csv
-  code --install-extension johnstoncode.svn-scm
-  code --install-extension maelvalais.autoconf
-  code --install-extension mechatroner.rainbow-csv
-  code --install-extension mrjjot.vscode-glsl-linter
-  code --install-extension ms-azuretools.vscode-docker
-  code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
-  code --install-extension ms-python.python
-  code --install-extension ms-toolsai.jupyter
-  code --install-extension ms-vscode-remote.remote-ssh
-  code --install-extension ms-vscode-remote.remote-ssh-edit
-  code --install-extension ms-vscode.cpptools
-  code --install-extension njpwerner.autodocstring
-  code --install-extension octref.vetur
-  code --install-extension PKief.material-icon-theme
-  code --install-extension PsykoSoldi3r.itunes-vscode
-  code --install-extension quillaja.goasm
-  code --install-extension redhat.vscode-yaml
-  code --install-extension rust-lang.rust
-  code --install-extension slevesque.shader
-  code --install-extension tomoki1207.pdf
-  code --install-extension vscode-icons-team.vscode-icons
-  code --install-extension vscodevim.vim
-  code --install-extension WakaTime.vscode-wakatime
-  code --install-extension wayou.vscode-todo-highlight
-  code --install-extension yzhang.markdown-all-in-one
-  code --install-extension zhouronghui.propertylist
-  code --install-extension znck.grammarly
-  code --install-extension zxh404.vscode-proto3
-  ```
 
 ### Writing
 
-- Typora: https://typora.io
 - MacTeX: http://www.tug.org/mactex/mactex-download.html
 - Klatexformula: https://klatexformula.sourceforge.io/downloads
-- MindNode: AppStore
-- OmniGraffle: AppStore
 - PDF Expert: AppStore
-- Mendeley: https://www.mendeley.com/download-mendeley-desktop/
 - Zotero: https://www.zotero.org/download/
   + Plugin Zotfile: http://zotfile.com/
   + Config: base directory to dropbox, zotfile source folder from download, and location of files to dropbox (automatic move).
@@ -140,36 +94,49 @@
 ### Utils
 
 - ShadowsocksX-NG: https://github.com/shadowsocks/ShadowsocksX-NG
-- The Unarchiver: AppStore
 - Things 3: AppStore
-- iStatu Menu: https://bjango.com/mac/istatmenus/
-- Bartender: https://www.macbartender.com
-- Alfred: https://www.alfredapp.com
 - Zoom: https://zoom.us/
 
 ### Optional
 
 - Blender: https://www.blender.org/download/
 - MeshLab: http://www.meshlab.net/#download
-- CUDA: https://developer.nvidia.com/cuda-downloads
-- cuDNN: https://developer.nvidia.com/cudnn
-- JDK: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 - Xcode: AppStore
 - OBS: https://obsproject.com/download
-- Medis: https://github.com/luin/medis/releases/tag/v0.5.0
-- Sequel Pro: https://sequelpro.com/download
 - HandBrake: https://handbrake.fr/downloads.php
 - Adobe Acrobat Reader (for special purpose)
-- Office: https://stores.office.com/myaccount/home.aspx#install
 - Postman: https://www.getpostman.com/apps
-- Dash: https://kapeli.com/dash
-- Robo 3T: https://robomongo.org/
-- SourceTree: https://www.sourcetreeapp.com
 - Discord: https://discord.com/download
-- Gifski: AppStore
 
 ### Entertainment
 
 - Minecraft: https://minecraft.net
 - Steam: http://steampowered.com
-- YYets: http://app.rrys.tv/
+
+
+```
+$ cat ~/.gitconfig                                              main ● [16:45:48]
+[user]
+        name = Changkun Ou
+        email = hi@changkun.de
+[init]
+        defaultBranch = main
+[url "ssh://git@github.com/"]
+        insteadOf = https://github.com/
+[http]
+        cookiefile = /Users/changkun/.gitcookies
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[credential "https://github.com"]
+        helper =
+        helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper =
+        helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://code.latere.ai"]
+        helper =
+        helper = !latere git-credential
+```

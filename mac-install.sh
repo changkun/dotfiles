@@ -5,8 +5,7 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # brew install
-brew tap mongodb/brew
-brew install wget python3 uv tree macvim node youtube-dl tmux pandoc cmake cmake-docs reattach-to-user-namespace mongodb-community redis httpie vegeta awscli pgweb kubectl
+brew install wget python3 uv tree node youtube-dl macvim tmux pandoc cmake cmake-docs reattach-to-user-namespace redis httpie vegeta awscli pgweb kubectl gh
 # nodejs install
 npm install -g typescript
 # python install
@@ -20,7 +19,6 @@ cd autojump && ./install.py && cd .. && rm -rf autojump
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 mv ~/.zshrc ~/.zshrc_old
 ln zsh/zshrc-mac.conf ~/.zshrc
-ln zsh/changkun.zsh-theme ~/.oh-my-zsh/themes/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 source ~/.zshrc
 
