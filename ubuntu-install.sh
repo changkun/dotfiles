@@ -38,6 +38,14 @@ mv ~/goes/go ~/goes/$GOVERSION
 ln -s ~/goes/$GOVERSION ~/goes/go
 source ~/.zshrc
 
+# install lean 4: elan manages the toolchains, and each project pins its own
+# in lean-toolchain, so no default toolchain is installed here
+curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --no-modify-path --default-toolchain none
+source ~/.zshrc  # the zsh config puts ~/.elan/bin on PATH
+# a Mathlib project, e.g. to check a proof file (Mathlib's prebuilt cache is ~5 GB):
+#   lake +leanprover-community/mathlib4:lean-toolchain new myproject math
+#   cd myproject && lake exe cache get && lake build
+
 # install vim config
 cd ~/dev/dotfiles
 ln vim/vimrc.config ~/.vimrc
