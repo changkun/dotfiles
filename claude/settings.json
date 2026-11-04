@@ -12,8 +12,7 @@
     "swift-lsp@claude-plugins-official": true,
     "codex@openai-codex": true,
     "spec@latere-ai": true,
-    "ci@latere-ai": true,
-    "typesafe@typesafe-ai": true
+    "ci@latere-ai": true
   },
   "extraKnownMarketplaces": {
     "openai-codex": {
@@ -26,12 +25,6 @@
       "source": {
         "source": "github",
         "repo": "latere-ai/agent-skills"
-      }
-    },
-    "typesafe-ai": {
-      "source": {
-        "source": "github",
-        "repo": "typesafe-ai/skills"
       }
     }
   },
