@@ -1,0 +1,4 @@
+# Claude Code: the owner-words hook keeps its cache of typed messages next to
+# the installed hook; it must never be committed.
+owner-words.cache.*
+__pycache__/
