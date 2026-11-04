@@ -1,0 +1,45 @@
+{
+  "cleanupPeriodDays": 99999,
+  "env": {
+    "CLAUDE_CODE_SUPPRESS_SESSION_ATTRIBUTION": "1"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "codex@openai-codex": true,
+    "spec@latere-ai": true,
+    "ci@latere-ai": true
+  },
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    },
+    "latere-ai": {
+      "source": {
+        "source": "github",
+        "repo": "latere-ai/agent-skills"
+      }
+    }
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|MultiEdit|NotebookEdit|Agent|SendMessage",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/owner-words.py",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

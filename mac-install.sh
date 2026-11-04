@@ -55,6 +55,10 @@ vim +PlugInstall +qall
 ln tmux/tmux.conf ~/.tmux.conf
 ln tmux/tmux.local.conf ~/.tmux.conf.local
 
+# install the claude code setup: the owner-words hook, the user settings and
+# the ccstatus status line, as the README describes
+sh claude/install.sh
+
 # fonts
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts && ./install.sh && cd .. && rm -rf fonts
